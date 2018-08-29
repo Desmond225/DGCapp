@@ -1,4 +1,4 @@
-function func() {
+function amountOfHolesPlayed() {
   let holesPlayed = document.getElementsByName('holesPlayed');
   let x;
     for(let i = 0; i < holesPlayed.length; i++){
