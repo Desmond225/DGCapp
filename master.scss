@@ -2,18 +2,32 @@ $main-fonts: Arial, sans-serif;
 $heading-size: 40px;
 $header-color: white;
 
+%header{
+    font-weight:bold;
+    float: left;
+    font-size: 21px;
+    margin-top: 15%;
+    margin-left: 2%;
+}
+
+.section1 {
+  background: url(https://d1nwosmzpc2sru.cloudfront.net/dims4/GG/ba2ccf8/2147483647/crop/1974x848%2B5%2B493/resize/1350x580/quality/90/?url=https%3A%2F%2Fd1nwosmzpc2sru.cloudfront.net%2Fd1%2F57%2F2948da75473ab0fd3773ffcba7b9%2Fworlds-largest-golf-outing-put-2000px.jpg) bottom center;
+  background-size: cover;
+  height: 350px;
+}
+
+.section1-text {
+  @extend %header;
+}
+
+
 %grey-background-in-between {
   border-top: 1px solid black;
   height: 600px;
   background: linear-gradient(to right, #bdc3c7, #2c3e50)
 }
 
-%section-in-between-text-standards {
-    color: hsla(70, 76%, 96%, 1);
-    font-weight:bold;
-    width: 500px;
-    float: left;
-}
+
 .mySlides {
   width: 1500px;
   height: 400px;
@@ -59,21 +73,14 @@ h5 {
 }
 
 .section-in-between-text {
-  @extend %section-in-between-text-standards;
+  @extend %header;
   font-size: 15px;
   text-align: justify;
   margin-top: 1%;
   margin-left: 5%;
 }
 
-.header {
-  @extend %section-in-between-text-standards;
-  font-size: 21px;
-  text-align:left;
-  margin-top: 15%;
-  margin-left: 2%;
 
-}
 
 img {
   float: right;
