@@ -9,13 +9,17 @@
   width: 500px;
   float: left; }
 
+.mySlides {
+  width: 1500px;
+  height: 400px; }
+
 .background {
   background: url(https://d1nwosmzpc2sru.cloudfront.net/dims4/GG/ba2ccf8/2147483647/crop/1974x848%2B5%2B493/resize/1350x580/quality/90/?url=https%3A%2F%2Fd1nwosmzpc2sru.cloudfront.net%2Fd1%2F57%2F2948da75473ab0fd3773ffcba7b9%2Fworlds-largest-golf-outing-put-2000px.jpg) bottom center;
   background-size: cover;
-  height: 600px; }
+  height: 400px; }
 
 .background2 {
-  background: url(https://d1nwosmzpc2sru.cloudfront.net/dims4/GG/387aa44/2147483647/crop/1787x768%2B0%2B176/resize/1350x580/quality/90/?url=https%3A%2F%2Fd1nwosmzpc2sru.cloudfront.net%2Fcb%2F75%2F8d75785e43539a771f48f16fd307%2F17fairway-puakea.jpg);
+  background: linear-gradient(to bottom, #b4e391 0%, #61c419 50%, #b4e391 100%);
   background-size: cover;
   height: 500px; }
 
@@ -23,13 +27,16 @@
   color: white;
   padding: 25px; }
 
-h2 {
-  font-size: 20px;
+h1, h5 {
+  font-size: 40px;
   font-family: Arial, sans-serif;
-  color: green;
+  color: white;
   font-weight: bold;
   text-align: center;
   padding: 5px; }
+
+h5 {
+  font-size: 20px; }
 
 .section-in-between-text {
   font-size: 15px;
@@ -40,7 +47,7 @@ h2 {
 .header {
   font-size: 21px;
   text-align: left;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 2%; }
 
 img {
