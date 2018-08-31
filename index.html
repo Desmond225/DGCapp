@@ -19,98 +19,135 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
     aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">What is this?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Statistics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Log in</a>
-        </li>
-      </ul>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">What is this?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Statistics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Log in</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="section1">
+  <div class="section1-text">
+    <h5>Gain more insight in your game and..</h5>
+    <h1 id="title">Start playing better golf.</h1>
+  </div>
+</div>
+
+<div class="section2">
+  <div class="section2-text">
+    <h1>Digital Golfing Coach</h1><br>
+      <h3 id="contents" class="grow" onmouseover="imgChange2()"><u>Scoring & Statistics</u></h3>
+        <p>Track your scores with ease by using the DGC app or website</p>
+      <h3 id="contents" class="grow" onmouseover="imgChange()"><u>Handicap Index</u></h3>
+        <p>Gain more insight in your handicap, thanks to intelligent technology
+      which will update and give an accurate indication of your form on the course.</p>
+      <h3 id="contents" class="grow" onmouseover="imgChange3()"><u>Smart Caddy</u></h3>
+        <p>Having a caddy has never been so easy! With the DGC technology available,
+      you can easily ask for advice and improve your game even quicker.</p>
+      <h3 id="contents" class="grow" onmouseover="imgChange4()"><u>Specific drills</u></h3>
+        <p>No more wasted time on the practice facilities thanks to DGC's smart
+      way of recognizing weak points in your game.</p>
+  </div>
+  <div class="img">
+    <img id="myImage" src="https://photos.bluegolf.com/45/3f/d9/b2/693244f28f953a7c20cb670c_l.jpg" alt="scorecards">
+  </div>
+</div>
+
+<div class="section3">
+  <div class="section3-text">
+      <h1 style="text-align:center; font-style: bold">Coming soon!</h1>
+  </div>
+</div>
+
+<div class="section4">
+  <div class="section4-text-1">
+    <h1>Experience!</h1><br>
+    <p>When it comes to putting, having an idea about your statistics can help
+      you improve! Here's a simple tool to give an indication about your putting strength.</p>
+      <form>
+        <legend>Enter amount of holes played</legend>
+        <div>
+          <input id="holesPlayed" type="radio" name="holesPlayed" value="9" checked>
+          <label for="9">9</label>
+        </div>
+        <div>
+          <input id = "holesPlayed" type="radio" name="holesPlayed" value="18">
+          <label for="18">18</label>
+        </div>
+        <fieldset>
+          <legend>Enter amount of putts</legend>
+          <div>
+            <label for="putts"></label>
+            <input type="text" name="putts" id="putts" required minlength="1"
+            maxlength="2" placeholder="I made .. putts">
+            <span class="validity"></span>
+          </div>
+        </fieldset>
+        <br>
+      </form>
+      <button id="btn1" type="button" onClick="amountOfHolesPlayed()"
+      class="btn btn-info">Calculate</button><br>
+      <p id="results"></p>
     </div>
-  </nav>
+    <div class="section4-text-2">
+      <h1>Handicap calculator</h1><br>
 
-  <div class="section1">
-    <div class="section1-text">
-      <h5>Gain more insight in your game and..</h5>
-      <h1>Start playing better golf.</h1>
+      <form>
+        <div class="container">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">How many rounds?</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Less than 5</option>
+            <option>5-6</option>
+            <option>7-8</option>
+            <option>9-10</option>
+            <option>11-15</option>
+            <option>16-20</option>
+          </select>
+        </div>
+
+      </form>
+      <div class="form-group">
+        <form class="courseDetails" method="get">
+          <label for="SR">Enter slope rating:</label><br>
+          <input type="number" step="0.1" name="SR" placeholder="default: 125" required><br>
+          <label for="CR">Enter course rating: </label><br>
+          <input type="number" step="0.1" name="CR" placeholder="default: 71,9" required><br>
+        </form>
+
+      </div>
+        <div class="form-group">
+          <form class="rounds" action="scores.html" method="get">
+
+          <label for="round1">Round 1 score:</label><br>
+          <input type="text" name="round1" placeholder="Score" required><br>
+          <label for="round2">Round 2 score:</label><br>
+          <input type="text" name="round1" placeholder="Score" required><br>
+
+          <input onClick="handicap()" type="Submit" name="Submit" value="Submit"><br>
+          <script src="script.js"></script>
+          </div>
+          </form>
+        </div>
+
+
     </div>
   </div>
 
-  <div class="section1-in-between">
-    <div class="section-in-between-text">
-      <h1>Digital Golfing Coach</h1><br>
-
-      <h3 id="contents" class="grow" onmouseover="imgChange2()"><u>Scoring & Statistics</u></h3>
-      <p>Track your scores with ease by using the DGC app or website</p>
-      <h3 id="contents" class="grow" onmouseover="imgChange()"><u>Handicap Index</u></h3>
-      <p>Gain more insight in your handicap, thanks to intelligent technology
-        which will update and give an accurate indication of your form on the course.</p>
-        <h3 id="contents" class="grow" onmouseover="imgChange3()"><u>Smart Caddy</u></h3>
-        <p>Having a caddy has never been so easy! With the DGC technology available,
-          you can easily ask for advice and improve your game even quicker.</p>
-          <h3 id="contents" class="grow" onmouseover="imgChange4()"><u>Specific drills</u></h3>
-          <p>No more wasted time on the practice facilities thanks to DGC's smart
-            way of recognizing weak points in your game.</p>
-          </div>
-          <div class="img">
-            <img id="myImage" src="https://photos.bluegolf.com/45/3f/d9/b2/693244f28f953a7c20cb670c_l.jpg" alt="scorecards">
-          </div>
-        </div>
-
-        <div class="section2-in-between">
-          <div class="section-in-between-text">
-            <h1>Experience!</h1><br>
-            <p>When it comes to putting, having an idea about your statistics can help you improve!
-              Here's a simple tool to give an indication about your putting strength.</p>
-              <form>
-                <legend>Enter amount of holes played</legend>
-                <div>
-                  <input id="holesPlayed" type="radio" name="holesPlayed" value="9" checked>
-                  <label for="9">9</label>
-                </div>
-                <div>
-                  <input id = "holesPlayed" type="radio" name="holesPlayed" value="18">
-                  <label for="18">18</label>
-                </div>
-
-                <fieldset>
-                  <legend>Enter amount of putts</legend>
-                  <div>
-                    <label for="putts"></label>
-                    <input type="text" name="putts" id="putts" required minlength="1" maxlength="2" placeholder="I made .. putts">
-                    <span class="validity"></span>
-                  </div>
-                </fieldset>
-                <br>
-              </form>
-
-              <button id="btn1" type="button" onClick="amountOfHolesPlayed()" class="btn btn-info">Calculate</button><br>
-              <p id="results"></p>
-
-              <button type="button" class="btn btn-primary">Calculate HCP</button>
-              <button type="button" class="btn btn-secondary">Calculate GIR</button>
-              <button type="button" class="btn btn-success">More calculators</button>
-            </div>
-          </div>
-          <div class="section-in-between">
-
-            <img class="mySlides" src="https://cdn.cybergolf.com/images/1426/drivingrange.jpg">
-            <img class="mySlides" src="http://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_450,q_80,w_800/v1417036205/golfdigest_putting-kevin-weeks-hit-putts-dead-center.jpg">
-          </div>
-
-          <script type="text/javascript" src="script.js">
-
-          </script>
-        </body>
-        </html>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

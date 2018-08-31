@@ -1,4 +1,4 @@
-.section1-text, .section-in-between-text {
+.section1-text, .section2-text, .section3-text, .section4-text-1, .section4-text-2 {
   font-weight: bold;
   float: left;
   font-size: 21px;
@@ -10,14 +10,42 @@
   background-size: cover;
   height: 350px; }
 
-.section1-in-between, .section2-in-between {
+.section2 {
+  color: grey;
+  padding: 25px; }
+
+.section2-text {
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 400px; }
+
+.section3 {
+  background: url(course.jpg) bottom center;
+  background-size: cover;
+  height: 900px; }
+
+.section4-text-1 {
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 40%; }
+
+.section4-text-2 {
+  float: right;
+  width: 40%;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 5%; }
+
+.section2, .section4 {
   border-top: 1px solid black;
   height: 600px;
-  background: linear-gradient(to right, #bdc3c7, #2c3e50); }
-
-.mySlides {
-  width: 1500px;
-  height: 400px; }
+  background: #d9f2cc;
+  background: linear-gradient(90deg, #d9f2cc 0%, #eaffd6 50%, #d2ffd0 100%); }
 
 .background {
   background: url(https://d1nwosmzpc2sru.cloudfront.net/dims4/GG/ba2ccf8/2147483647/crop/1974x848%2B5%2B493/resize/1350x580/quality/90/?url=https%3A%2F%2Fd1nwosmzpc2sru.cloudfront.net%2Fd1%2F57%2F2948da75473ab0fd3773ffcba7b9%2Fworlds-largest-golf-outing-put-2000px.jpg) bottom center;
@@ -29,11 +57,7 @@
   background-size: cover;
   height: 500px; }
 
-.section1-in-between {
-  color: white;
-  padding: 25px; }
-
-h1, h5 {
+#title, h1, h5 {
   font-size: 40px;
   font-family: Arial, sans-serif;
   color: white;
@@ -41,14 +65,11 @@ h1, h5 {
   text-align: center;
   padding: 5px; }
 
+h1 {
+  color: grey; }
+
 h5 {
   font-size: 20px; }
-
-.section-in-between-text {
-  font-size: 15px;
-  text-align: justify;
-  margin-top: 1%;
-  margin-left: 5%; }
 
 img {
   float: right;

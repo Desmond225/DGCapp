@@ -20,18 +20,56 @@ $header-color: white;
   @extend %header;
 }
 
+.section2 {
+  @extend %grey-background-in-between;
+  color: grey;
+  padding: 25px;
+}
+.section2-text {
+  @extend %header;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 400px;
+}
+
+.section3 {
+  background: url(course.jpg) bottom center;
+  background-size: cover;
+  height: 900px;
+}
+.section3-text {
+  @extend %header;
+}
+
+.section4 {
+  @extend %grey-background-in-between;
+}
+.section4-text-1 {
+  @extend %header;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 40%;
+
+}
+.section4-text-2 {
+  @extend %header;
+  float: right;
+  width: 40%;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 5%;
+}
 
 %grey-background-in-between {
   border-top: 1px solid black;
   height: 600px;
-  background: linear-gradient(to right, #bdc3c7, #2c3e50)
-}
-
-
-.mySlides {
-  width: 1500px;
-  height: 400px;
-}
+  background: rgb(217,242,204);
+  background: linear-gradient(90deg, rgba(217,242,204,1) 0%, rgba(234,255,214,1) 50%, rgba(210,255,208,1) 100%);}
 
 .background{
   background: url(https://d1nwosmzpc2sru.cloudfront.net/dims4/GG/ba2ccf8/2147483647/crop/1974x848%2B5%2B493/resize/1350x580/quality/90/?url=https%3A%2F%2Fd1nwosmzpc2sru.cloudfront.net%2Fd1%2F57%2F2948da75473ab0fd3773ffcba7b9%2Fworlds-largest-golf-outing-put-2000px.jpg) bottom center;
@@ -45,16 +83,6 @@ $header-color: white;
   height: 500px;
 }
 
-.section1-in-between{
-  @extend %grey-background-in-between;
-  color: white;
-  padding: 25px;
-}
-
-.section2-in-between {
-  @extend %grey-background-in-between;
-}
-
 %h1 {
   font-size: $heading-size;
   font-family: $main-fonts;
@@ -64,23 +92,18 @@ $header-color: white;
   padding: 5px;
 }
 
-h1 {
+#title {
   @extend %h1;
 }
+h1 {
+  @extend %h1;
+  color: grey;
+}
+
 h5 {
   @extend %h1;
   font-size: 20px;
 }
-
-.section-in-between-text {
-  @extend %header;
-  font-size: 15px;
-  text-align: justify;
-  margin-top: 1%;
-  margin-left: 5%;
-}
-
-
 
 img {
   float: right;
